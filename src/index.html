@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fa-IR" dir="rtl">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,8 +9,65 @@
     <script src="main.js" defer></script>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="output.css">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+
 </head>
+
 <body>
+    <header class="bg-white">
+        <!-- header container -->
+        <div class="px-4 py-2 flex justify-between items-center relative">
+            <div onclick="toggleMobileMenu()" id="burger-btn">
+                <svg width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4 18L20 18" stroke="#000000" stroke-width="2" stroke-linecap="round" />
+                    <path d="M4 12L20 12" stroke="#000000" stroke-width="2" stroke-linecap="round" />
+                    <path d="M4 6L20 6" stroke="#000000" stroke-width="2" stroke-linecap="round" />
+                </svg>
+
+            </div>
+            <h1 class="text-2xl font-bold">Anvogue</h1>
+            <div class="relative group">
+                <img class="w-10" src="./public/images/icons/user-icon.png" width="40px" alt="">
+                <div
+                    class="login-container hidden group-hover:block w-56 bg-white rounded-xl absolute top-full p-4 shadow-lg">
+                    <a class="block text-center p-3 bg-black text-white hover:bg-green-400 hover:text-black w-full rounded-xl"
+                        href="#">ورود</a>
+                </div>
+            </div>
+            <div id="mobile-menu" class="fixed right-0 top-0 w-full h-screen bg-white px-4 py-2 !hidden">
+                <div class="relative">
+                    <span class="text-2xl font-bold text-center block mt-2">Anvogue</span>
+                    <svg onclick="toggleMobileMenu()" class="absolute right-2 top-2" width="30px" height="30px"
+                        viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M2 12C2 7.28595 2 4.92893 3.46447 3.46447C4.92893 2 7.28595 2 12 2C16.714 2 19.0711 2 20.5355 3.46447C22 4.92893 22 7.28595 22 12C22 16.714 22 19.0711 20.5355 20.5355C19.0711 22 16.714 22 12 22C7.28595 22 4.92893 22 3.46447 20.5355C2 19.0711 2 16.714 2 12Z"
+                            stroke="#1C274C" stroke-width="1.5" />
+                        <path d="M14.5 9.50002L9.5 14.5M9.49998 9.5L14.5 14.5" stroke="#1C274C" stroke-width="1.5"
+                            stroke-linecap="round" />
+                    </svg>
+                </div>
+
+                <ul class="p-4 mt-10">
+                    <li>خانه</li>
+                    <li>دسته بندی ها</li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="header-slider" class="flex gap-8 overflow-x-auto bg-black text-white py-4">
+            <span class="shrink-0">مشتریان جدید با کد {GET10} %10 صرفه جویی می کنند</span>
+            <span class="shrink-0">ارسال رایگان برای تمامی سفارشات بالای 50 هزار تومان</span>
+            <span class="shrink-0">%10 تخفیف برای تمام وسایل مورد نیاز تابستان!</span>
+            <span class="shrink-0">مشتریان جدید با کد {GET10} %10 صرفه جویی می کنند</span>
+            <span class="shrink-0">ارسال رایگان برای تمامی سفارشات بالای 50 هزار تومان</span>
+            <span class="shrink-0">%10 تخفیف برای تمام وسایل مورد نیاز تابستان!</span>
+        </div>
+    </header>
     <div id="root"></div>
 </body>
+
 </html>
