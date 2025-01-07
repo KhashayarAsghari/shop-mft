@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+.card {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 4px 4px 4px 2px rgb(202, 202, 202);
+}
+
+.card img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.card .desc {
+    padding: .5rem;
+}
+
+.desc h3 {
+    margin-bottom: 1rem;
+}
+
+#root {
+    max-width: 1280px;
+    margin: .5rem auto;
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr);
+    justify-content: center;
+    gap: 1rem;
+}
